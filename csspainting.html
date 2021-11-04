@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Painting</title>
+</head>
+
+    
+    <style>
+        * {
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h2 {
+          padding-top: 50px;
+        }
+
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        
+        .topnav {
+          overflow: hidden;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background-color: #333;
+        }
+        
+        
+        .topnav a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 15px 15px;
+          text-decoration: none;
+        }
+        
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        
+        .content {
+          background-color: #ddd;
+          padding: 10px;
+          height: 900px; 
+        }
+        
+        
+        .footer {
+          background-color: #f1f1f1;
+          padding: 10px;
+        }
+
+      
+        #rectangle{
+            height: 590px;
+            width: 691px;
+            background-color: #232325;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 150px;
+
+            
+        }
+
+        #circle_1_orange{
+            height: 130px;
+            width: 130px;
+            background-color: #DB6229;
+            border-radius: 50%;
+            position: absolute;
+            top: 75px;
+            right: 490px;
+            z-index: 10;        
+        }
+
+        #semicircle_1_green{
+            height: 110px;
+            width: 240px;
+            background-color: #558958;
+            border-radius: 0 0 150px 150px;
+            position: absolute;
+            top: 165px;
+            right: -60px;
+            z-index: 20;
+        }
+
+        #triangle_white{
+            width: 0;
+	        height: 0;
+	        border-left: 125px solid transparent;
+	        border-right: 125px solid transparent;
+	        border-bottom: 220px solid #EDEDED;
+            position: absolute;
+            top: 110px;
+            right: -5px;
+            z-index: 30;
+        }
+
+        #triangle_2_yellow{
+            width: 0;
+	        height: 0;
+	        border-left: 40px solid transparent;
+	        border-right: 40px solid transparent;
+	        border-bottom: 530px solid #FBE375;
+            position: absolute;
+            top: -310px;
+            right: -245px;
+            z-index: 30;
+        }
+
+        #triangle_3_orange{
+            width: 0;
+	        height: 0;
+	        border-left: 60px solid transparent;
+	        border-right: 60px solid transparent;
+	        border-bottom: 240px solid #DB6229;
+            position: absolute;
+            top: 290px;
+            right: -160px;
+            z-index: 30;
+        }
+
+        #circle_2_orange{
+            height: 130px;
+            width: 130px;
+            background-color: #DB6229;
+            border-radius: 50%;
+            position: absolute;
+            top: -130px;
+            right: -65px;
+        }
+
+        #circle_3_white{
+            height: 160px;
+            width: 160px;
+            background-color: #EDEDED;
+            border-radius: 50%;
+            position: absolute;
+            top: -165px;
+            right: -15px;
+        }
+
+        #triangle_3_green{
+            width: 0;
+	        height: 0;
+	        border-left: 70px solid transparent;
+	        border-right: 70px solid transparent;
+	        border-bottom: 275px solid #558958;
+            position: absolute;
+            top: 260px;
+            right: -145px;
+            z-index: 30;
+        }
+
+        #semicircle_2_white{
+            height: 270px;
+            width: 135px;
+            background-color: #EDEDED;
+            border-radius: 150px 0 0 150px;
+            position: absolute;
+            top: -270px;
+            right: -65px;
+            z-index: 20;
+        }
+
+        #semicircle_3_green{
+            height: 220px;
+            width: 110px;
+            background-color: #558958;
+            border-radius: 150px 0 0 150px;
+            position: absolute;
+            top: 25px;
+            right: 0px;
+            z-index: 20; 
+        }
+
+        #rectangle_2_white{
+            height: 330px;
+            width: 43px;
+            background-color: #EDEDED;
+            position: absolute;
+            top: 190px;
+            right: 360px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="topnav">
+          <a href="index.html" target="_self">Index</a>
+          <a href="biography.html" target="_self">Bio</a>
+          <a href="portfoliolanding.html" target="_self">Portfolio</a>
+          <a href="mbs.html" target="_self">MBS</a>
+          <a href="net_art.html" target="_self">Net.Art</a>
+        </div>
+        
+        <div class="content">
+          
+            <h2>CSS Painting</h2>
+
+            <p>This is an example of recreating art using CSS. 
+            The art work copied was Auguste Herbin's Geometric Abstraction: 
+            Works On Paper 1938-59. </p>
+          
+            <p> <a href="http://www.jillnewhouse.com/exhibitions/auguste-herbin-geometric-abstraction-works-on-paper-1938-59" target="_blank">Auguste Herbin's Geometric Abstraction: 
+            Works On Paper 1938-59.</a>
+            </p>
+
+                
+            <div id="rectangle">
+            <div id="circle_1_orange">
+            <div id="semicircle_1_green">
+            <div id="triangle_white">
+            <div id="rectangle_white">
+            <div id="triangle_2_yellow">
+            <div id="triangle_3_orange">
+            <div id="circle_2_orange">
+            <div id="circle_3_white">
+            <div id="triangle_3_green">
+            <div id="semicircle_2_white">
+            <div id="semicircle_3_green">
+            <div id="rectangle_2_white">
+            
+        </div>
+
+</body>
+</html>
